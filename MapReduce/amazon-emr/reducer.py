@@ -7,7 +7,7 @@ def main(argv):
 	last_word = None
 	word_count = 0
 
-	#final_result = {}
+	final_result = {}
 
 	for line in sys.stdin:
 		line = line.strip()
@@ -26,7 +26,7 @@ def main(argv):
 
 		#different word	
 		else:
-			#final_result[last_word] = word_count
+			final_result[last_word] = word_count
 			result_to_print = [last_word, word_count]
 			#prints "word\t#occurs"
 			print("\t".join(str(v) for v in result_to_print))
@@ -34,14 +34,14 @@ def main(argv):
 			last_word = word
  			word_count = 1
 
- 	'''
- 	when we have just one reducer we can do this:
+ 	
+ 	#when we have just one reducer we can do this:
     #prints until the range(nth) most
-    #common word 
- 	for i in range(20):
+    #common word_count
+ 	print("\n---- Result ----\n")
+ 	for i in range(10):
  		mylist = sorted(final_result, key=final_result.__getitem__, reverse=True)		
- 		print(mylist[i], final_result[mylist[i]])
- 	'''	
+ 		print("%s\t%s" % (mylist[i], final_result[mylist[i]]))
 
 
 if __name__ == "__main__":
