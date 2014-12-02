@@ -4,9 +4,6 @@ import collections
 
 def main(argv):
 
-	last_word = None
-	word_count = 0
-
 	result_words = {}
 	result_hashtags = {}
 	result_users = {}
@@ -18,12 +15,27 @@ def main(argv):
 
 		count = int(count)
 
+		#hashtags
 		if word.startswith("#"):
-			result_hashtags[word] = count
+			if result_hashtags.get(word, 0) == 0:
+				result_hashtags[word] = count
+			else:
+				result_hashtags[word] += count 				
+
+		#users		
 		elif word.startswith("@"):
-			result_users[word] = count	
+			if result_users.get(word, 0) == 0:
+				result_users[word] = count	
+			else:
+				result_users[word] += count		
+		
+		#common words
 		else:
-			result_words[word] = count	
+			if result_words.get(word, 0) == 0:
+				result_words[word] = count
+			else:
+				result_words[word] += count	
+		
 		
 
  	#print("\n---- Result ----\n")

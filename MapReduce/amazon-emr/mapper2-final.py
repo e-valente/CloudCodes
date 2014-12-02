@@ -24,6 +24,7 @@ def main(argv):
 			result_users[word] = count	
 		else:
 			result_words[word] = count	
+	print(len(result_words))		
 		
 
  	#print("\n---- Result ----\n")
