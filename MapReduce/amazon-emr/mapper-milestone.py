@@ -8,12 +8,14 @@ with open('sample.bin') as f:
 '''
 
 def processTweet(mytweet):
-	#pattern = re.compile("[a-zA-Z][a-zA-Z0-9]*") 
-	pattern = re.compile("[\w@#]+") 
+	pattern = re.compile("[a-zA-Z][a-zA-Z0-9]*") 
+	#pattern = re.compile("[\w@#]+") 
 	for word in pattern.findall(mytweet): 
 		#line.replace(',', " ")
 		#words = line.split()
-		print(word.lower() + "\t" + "1")
+		#print(word.lower() + "\t" + "1")
+		print "LongValueSum:" + word.lower() + "\t" + "1" 
+
 
 def getTweets():
 	tweet = []

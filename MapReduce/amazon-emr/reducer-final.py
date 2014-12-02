@@ -34,16 +34,13 @@ def main(argv):
 			last_word = word
  			word_count = 1
 
- 	
- 	#when we have just one reducer we can do this:
     #prints until the range(nth) most
-    #common word_count
+    #common word 
 
- 	'''print("\n---- Result ----\n")
- 	for i in range(10):
+ 	'''for i in range(10):
  		mylist = sorted(final_result, key=final_result.__getitem__, reverse=True)		
- 		print("%s\t%s" % (mylist[i], final_result[mylist[i]]))'''
- 	
+ 		print(mylist[i], final_result[mylist[i]])'''
+
 
 if __name__ == "__main__":
 	main(sys.argv)
