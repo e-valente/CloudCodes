@@ -8,7 +8,7 @@ with open('sample.bin') as f:
 '''
 
 def processTweet(mytweet):
-	pattern = re.compile("[a-zA-Z0-9@_#][a-zA-Z0-9@_#]+") 
+	pattern = re.compile("[a-zA-Z0-9@_#-][a-zA-Z0-9@_#-]+") 
 	#pattern = re.compile("[\w@#]+") 
 	for word in pattern.findall(mytweet): 
 		#line.replace(',', " ")
