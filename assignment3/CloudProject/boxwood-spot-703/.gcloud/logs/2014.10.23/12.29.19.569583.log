@@ -1,0 +1,12 @@
+2014-10-23 12:29:19,583 DEBUG    root            Metrics started...
+2014-10-23 12:29:19,600 DEBUG    root            Running gcloud.auth.git-helper with _Args({'format': None,
+ 'h': None,
+ 'help': None,
+ 'method': 'store',
+ 'project': None,
+ 'quiet': None,
+ 'shell': None,
+ 'user_output_enabled': None,
+ 'verbosity': None}).
+2014-10-23 12:29:19,609 DEBUG    root            Shutting down metrics...
+2014-10-23 12:29:19,916 DEBUG    root            Sent event: Event(category='Executions', action='gcloud', label=u'2014.09.09', value=0)

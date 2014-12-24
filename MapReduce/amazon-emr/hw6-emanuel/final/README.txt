@@ -1,0 +1,1 @@
+As I used to work with Hadoop in Brazil, I decided to write my own "aggregate" first reducer. 
